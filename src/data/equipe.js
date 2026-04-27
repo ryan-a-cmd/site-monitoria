@@ -32,6 +32,7 @@ import imgDanielGodoi from "@assets/equipe/daniel-godoi.jpg";
 import imgPietraPaz from "@assets/equipe/pietra-paz.jpg";
 import imgLeticiaBorsaro from "@assets/equipe/leticia-borsaro.jpg";
 import imgMarcoMarques from "@assets/equipe/marco-marques.jpg";
+import imgJoaoSoupa from "@assets/equipe/joao-soupa.jpg";
 
 /*
  * COMO ADICIONAR UM NOVO MONITOR À EQUIPE:
@@ -187,7 +188,7 @@ export const equipeData = [
     id: "joao-gabriel",
     nome: "João Gabriel Torres",
     descricao:
-      "Desenvolvedor Front-end com interesse em Java e Linux | vulgo 'Modo Escuro'.",
+      "Desenvolvedor Front-end entusiasta em Java e Linux | vulgo 'Modo Escuro'.",
     foto: imgJoaoGabriel,
     ativo: true,
     linkedin: "https://www.linkedin.com/in/joaogmtorres",
@@ -263,14 +264,14 @@ export const equipeData = [
     github: "https://github.com/pietrapaz",
   },
   {
-    id: "joao-pedro",
-    nome: "João Pedro Passos",
-    descricao: "Monitor de Web (JavaScript)",
-    foto: imgPadrao,
+    id: "joao-soupa",
+    nome: "João Pedro Soupa",
+    descricao: "Java Developer | Kubernetes | Cloud Computing | DevOps",
+    foto: imgJoaoSoupa,
     ativo: true,
-    ocultarNaEquipe: true,
+    ocultarNaEquipe: false,
     linkedin: "https://www.linkedin.com/in/jpsoupa/",
-    github: null,
+    github: "https://github.com/JpSoupa1",
   },
   {
     id: "ricardo-bonna",

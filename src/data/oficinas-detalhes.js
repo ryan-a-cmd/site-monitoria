@@ -172,9 +172,9 @@ export const oficinasDetalhes = [
       },
     ],
     monitores: [
-      getMonitor("lucas-paiva"),
+      getMonitor("lucas-paiva", true),
       getMonitor("joao-gabriel"),
-      getMonitor("joao-pedro"),
+      getMonitor("joao-soupa"),
     ].filter(Boolean),
   },
 
