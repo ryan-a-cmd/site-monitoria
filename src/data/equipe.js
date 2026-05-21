@@ -34,6 +34,7 @@ import imgLeticiaBorsaro from "@assets/equipe/leticia-borsaro.jpg";
 import imgMarcoMarques from "@assets/equipe/marco-marques.jpg";
 import imgJoaoSoupa from "@assets/equipe/joao-soupa.jpg";
 import imgFelipeRios from "@assets/equipe/felipe-rios.jpg";
+import imgRicardoBonna from "@assets/equipe/ricardo-bonna.jpg";
 
 /*
  * COMO ADICIONAR UM NOVO MONITOR À EQUIPE:
@@ -276,7 +277,7 @@ export const equipeData = [
     id: "ricardo-bonna",
     nome: "Ricardo Bonna",
     descricao: "Entusiasta de Linux e escravo de farm no Ark Survival",
-    foto: imgPadrao,
+    foto: imgRicardoBonna,
     ativo: true,
     ocultarNaEquipe: true,
     linkedin: "https://www.linkedin.com/in/ricbonna/",
