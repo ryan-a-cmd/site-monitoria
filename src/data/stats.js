@@ -1,21 +1,21 @@
 export const statsData = [
   {
     id: "oficinas",
-    numero: 20,
+    numero: 30,
     sufixo: "+",
     duracao: 2,
     legenda: "Oficinas realizadas",
   },
   {
     id: "alunos",
-    numero: 300,
+    numero: 350,
     sufixo: "+",
     duracao: 2.5,
     legenda: "Alunos inscritos",
   },
   {
     id: "colaboradores",
-    numero: 30,
+    numero: 40,
     sufixo: "+",
     duracao: 2,
     legenda: "Colaboradores",

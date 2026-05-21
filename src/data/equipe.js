@@ -33,6 +33,7 @@ import imgPietraPaz from "@assets/equipe/pietra-paz.jpg";
 import imgLeticiaBorsaro from "@assets/equipe/leticia-borsaro.jpg";
 import imgMarcoMarques from "@assets/equipe/marco-marques.jpg";
 import imgJoaoSoupa from "@assets/equipe/joao-soupa.jpg";
+import imgFelipeRios from "@assets/equipe/felipe-rios.jpg";
 
 /*
  * COMO ADICIONAR UM NOVO MONITOR À EQUIPE:
@@ -188,7 +189,7 @@ export const equipeData = [
     id: "joao-gabriel",
     nome: "João Gabriel Torres",
     descricao:
-      "Desenvolvedor Front-end entusiasta em Java e Linux | vulgo 'Modo Escuro'.",
+      "Desenvolvedor Front-end com interesse em Java e Linux | vulgo 'Modo Escuro'.",
     foto: imgJoaoGabriel,
     ativo: true,
     linkedin: "https://www.linkedin.com/in/joaogmtorres",
@@ -231,7 +232,6 @@ export const equipeData = [
     descricao: "Data Engineering | Python, ML, NLP",
     foto: imgSavioNery,
     ativo: true,
-    ocultarNaEquipe: false,
     linkedin: "https://www.linkedin.com/in/s%C3%A1vio-arbu%C3%AAs-3028aa33a",
     github: "https://github.com/nizpew",
   },
@@ -269,14 +269,13 @@ export const equipeData = [
     descricao: "Java Developer | Kubernetes | Cloud Computing | DevOps",
     foto: imgJoaoSoupa,
     ativo: true,
-    ocultarNaEquipe: false,
     linkedin: "https://www.linkedin.com/in/jpsoupa/",
     github: "https://github.com/JpSoupa1",
   },
   {
     id: "ricardo-bonna",
     nome: "Ricardo Bonna",
-    descricao: "Monitor de Linux",
+    descricao: "Entusiasta de Linux e escravo de farm no Ark Survival",
     foto: imgPadrao,
     ativo: true,
     ocultarNaEquipe: true,
@@ -286,7 +285,8 @@ export const equipeData = [
   {
     id: "gabriel-garcia",
     nome: "Gabriel Garcia",
-    descricao: "Monitor de Linux",
+    descricao:
+      "Entusiasta de Redes e Cibersegurança | Fotógrafo nas horas vagas",
     foto: imgPadrao,
     ativo: true,
     ocultarNaEquipe: true,
@@ -319,6 +319,16 @@ export const equipeData = [
     foto: imgMarcoMarques,
     ativo: true,
     linkedin: "https://www.linkedin.com/in/marco-marques-aa1478278/",
+    github: null,
+  },
+  {
+    id: "felipe-rios",
+    nome: "Felipe Rios",
+    descricao: "Entusiasta em Computação em Nuvem e DevOps.",
+    foto: imgFelipeRios,
+    ativo: true,
+    ocultarNaEquipe: true,
+    linkedin: "https://www.linkedin.com/in/felipe-rios-93a9b23b6/",
     github: null,
   },
 

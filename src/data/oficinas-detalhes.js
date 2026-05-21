@@ -1,3 +1,4 @@
+import imgNuvem from "@assets/mago/oficinas/mago-nuvem.png";
 import img3D from "@assets/mago/oficinas/monitoria-blender.png";
 import imgJava from "@assets/mago/oficinas/mago-redes.png";
 import imgWeb from "@assets/mago/oficinas/mago-web.png";
@@ -39,18 +40,60 @@ const getMonitor = (id, isLider = false, infoExtra = "") => {
 
 export const oficinasDetalhes = [
   {
+    slug: "computacao-em-nuvem",
+    titulo: "Computação em Nuvem (AWS)",
+    campus: "Campus Asa Norte",
+    horarios: "Segunda, Quarta e Sexta, das 11h às 13h",
+    imagem: imgNuvem,
+    alt: "Mago manipulando nuvens",
+    botoes: [
+      {
+        texto: "Inscreva-se Agora",
+        link: "https://forms.gle/9CrJhaC1JpBYNM4Z6",
+        tipo: "primary",
+      },
+    ],
+    sobre: [
+      {
+        titulo: "",
+        texto:
+          "Durante esta oficina, serão apresentados os fundamentos da computação em nuvem com foco na plataforma Amazon Web Services, abordando os principais serviços utilizados no mercado para hospedagem, armazenamento, gerenciamento e monitoramento de aplicações. Os participantes irão aprender, de forma prática, como criar e administrar ambientes em nuvem utilizando serviços como Amazon EC2, Amazon S3, AWS IAM e Amazon CloudWatch.<br/><br/>Esta oficina faz parte de uma <strong>trilha</strong> ofertada pela monitoria de TI da Asa Norte que tem como objetivo Amazon EC2, Amazon S3, AWS IAM e Amazon CloudWatch com a finalidade de  desenvolver a capacidade técnica para criação de servidores virtuais, publicação de aplicações simples na internet, gerenciamento de permissões de acesso, armazenamento de arquivos em nuvem e monitoramento básico de recursos.<br/><br/>A oficina será realizada entre os dias <strong>25/05 e 12/06</strong>, com encontros às <strong>segundas, quartas e sextas-feiras</strong>. As aulas serão ministradas <strong>presencialmente</strong>.",
+      },
+      {
+        titulo: "O que você vai aprender:",
+        texto:
+          "<strong>Fundamentos de Computação em Nuvem:</strong> Como utilizar os principais serviços da AWS e compreender conceitos essenciais de infraestrutura cloud, virtualização e escalabilidade.<br/><strong>Instâncias Virtuais com EC2:</strong> Aprenderemos a criar, configurar e gerenciar servidores virtuais na AWS para hospedar aplicações e serviços.<br/><strong>Acesso Remoto e Administração:</strong> Como acessar servidores utilizando SSH e VS Code Remote, permitindo administração prática e desenvolvimento remoto.<br/><strong>Segurança na AWS:</strong> Configuração de grupos de segurança, IP Elástico, permissões de acesso e boas práticas para proteger recursos na nuvem.<br/><strong>Armazenamento com Amazon S3:</strong> Aprenderemos a armazenar, organizar e gerenciar arquivos utilizando buckets e recursos do S3.<br/><strong>Gerenciamento de Usuários com IAM:</strong> Como controlar permissões, criar usuários e aplicar políticas de acesso seguras dentro da AWS.<br/><strong>Hospedagem de Aplicações:</strong> Aprenderemos a publicar aplicações e sites simples utilizando serviços da AWS.<br/><strong>Redes e Infraestrutura Cloud:</strong> Introdução a conceitos de VPC, sub-redes e comunicação entre recursos na nuvem.<br/><strong>Monitoramento e Observabilidade:</strong> Como acompanhar métricas, logs e desempenho dos serviços utilizando o CloudWatch.<br/><strong>Controle de Custos e Boas Práticas:</strong> Aprenderemos a monitorar gastos, configurar billing alerts e aplicar práticas recomendadas de segurança e otimização na AWS.",
+      },
+      {
+        titulo: "Projetos e Liberdade Criativa:",
+        texto:
+          "Durante toda a oficina, vocês terão liberdade para explorar os serviços da AWS e criar seus próprios ambientes em nuvem, aplicando os conceitos aprendidos em projetos práticos de infraestrutura, hospedagem e administração de servidores.",
+      },
+      {
+        titulo: "Para quem é esta oficina:",
+        texto:
+          "<ul style='margin-left: 20px; margin-bottom: 20px; list-style-type: disc;'>" +
+          "<li>Estudantes interessados em infraestrutura cloud e práticas de DevOps;</li>" +
+          "<li>Pessoas que desejam aprender AWS de forma prática e aplicada;</li>" +
+          "<li>Interessados em entender como funciona a hospedagem, gerenciamento e monitoramento de aplicações na nuvem;</li>" +
+          "<li>Alunos que desejam dar os primeiros passos em administração de servidores e serviços cloud.</li>" +
+          "</ul>" +
+          "Preencha o formulário de inscrição para garantir sua participação. <strong>As vagas são limitadas.</strong>",
+      },
+    ],
+    monitores: [
+      getMonitor("felipe-rios", true),
+      getMonitor("luiz-nicolau"),
+    ].filter(Boolean),
+  },
+  {
     slug: "criacao-de-personagens-3d",
-    titulo: "Criação de Personagens 3D: Ciclo 2",
+    titulo: "Criação de Personagens 3D",
     campus: "Campus Asa Norte",
     horarios: "Segunda, Quarta e Sexta, das 11h às 13h",
     imagem: img3D,
     alt: "Oficina de Criação de Personagens 3D no Blender",
     botoes: [
-      {
-        texto: "Inscreva-se Agora",
-        link: "https://forms.gle/znc7K3u426sRbedq5",
-        tipo: "primary",
-      },
       {
         texto: "Playlist Criação de Personagens 3D",
         link: "/playlist/criacao-de-personagens-3d",
@@ -137,18 +180,12 @@ export const oficinasDetalhes = [
   // --- OFICINA DE WEB ---
   {
     slug: "oficina-de-web",
-    titulo: "Oficina de Web (JavaScript): Ciclo 2",
+    titulo: "Oficina de Web (JavaScript)",
     campus: "Campus Asa Norte",
     horarios: "Quarta e Sexta, das 11h às 13h",
     imagem: imgWeb,
     alt: "Mago pensando em desenvolvimento web cercado por tags HTML",
-    botoes: [
-      {
-        texto: "Inscreva-se Agora",
-        link: "https://forms.gle/Rm9iLtr5uxoP73eY8",
-        tipo: "primary",
-      },
-    ],
+    botoes: [],
     sobre: [
       {
         titulo: "",
@@ -181,15 +218,15 @@ export const oficinasDetalhes = [
   // --- OFICINA DE LINUX ---
   {
     slug: "oficina-de-linux",
-    titulo: "Oficina de Linux: Ciclo 2",
+    titulo: "Oficina de Linux: Monte sua própria distro!",
     campus: "Campus Asa Norte",
-    horarios: "Segunda e Quinta, das 17h às 19h",
+    horarios: "Segunda, Terça e Quinta, das 17h às 19h",
     imagem: imgLinux,
     alt: "Mago ao lado do pinguim Tux em cenário de neve",
     botoes: [
       {
         texto: "Inscreva-se Agora",
-        link: "https://forms.gle/g1CSPNoyhz9Kjuo8A",
+        link: "https://forms.gle/CqWuZsKsHQPNx1Lf6",
         tipo: "primary",
       },
     ],
@@ -197,12 +234,12 @@ export const oficinasDetalhes = [
       {
         titulo: "",
         texto:
-          "Durante esta oficina, serão explorados os fundamentos essenciais do sistema operacional Linux, desde o funcionamento do Shell e suas ferramentas de texto, passando pela estrutura real do sistema de arquivos, executáveis, bibliotecas e configurações, até a inicialização do sistema, gerenciamento de serviços, controle de processos e gerenciamento de pacotes — com atividades práticas em máquina virtual.<br/><br/>Esta oficina faz parte de uma trilha ofertada pela monitoria de TI da Asa Norte que tem como objetivo capacitar os participantes a compreender e operar sistemas Linux com autonomia, entendendo como o sistema se organiza, inicializa e executa programas, e oferecendo uma base sólida para atuar em ambientes de desenvolvimento, servidores e infraestrutura.<br/><br/>A oficina será realizada entre os dias <strong>13/04 e 08/05</strong>, com encontros às <strong>segundas e quintas</strong>. As aulas serão ministradas <strong>presencialmente</strong>.",
+          "Durante esta oficina, serão apresentados os fundamentos da construção e personalização de sistemas Linux, abordando desde a compilação do kernel até a configuração de serviços essenciais, segurança e otimização do sistema. Os participantes irão aprender, de forma prática, como estruturar ambientes Linux funcionais, configurar bootloaders, gerenciar pacotes e preparar distribuições customizadas para diferentes aplicações.<br/><br/>Esta oficina faz parte de uma <strong>trilha</strong> ofertada pela monitoria de TI da Asa Norte que tem como objetivo desenvolver conhecimentos em compilação e configuração do Kernel Linux, gerenciamento de sistemas de arquivos, inicialização customizada, integração de ferramentas essenciais, configuração de rede, segurança, otimização e distribuição de sistemas Linux.<br/><br/>A oficina será realizada entre os dias <strong>25/05 e 11/06</strong>, com encontros às <strong>segundas e quintas</strong>. As aulas serão ministradas <strong>presencialmente</strong>.",
       },
       {
         titulo: "O que você vai aprender:",
         texto:
-          "<strong>Shell e ferramentas de texto:</strong> Como utilizar o terminal, navegar pelo sistema e operar arquivos com eficiência usando ferramentas de linha de comando.<br/><strong>Estrutura real do sistema de arquivos:</strong> Como o Linux organiza seus diretórios, onde ficam os executáveis, bibliotecas e arquivos de configuração.<br/><strong>Inicialização do sistema:</strong> Como o Linux inicia, desde o boot até o carregamento dos serviços e do ambiente do usuário.<br/><strong>Gerenciamento de serviços:</strong> Como iniciar, parar e monitorar serviços com systemd e outras ferramentas.<br/><strong>Controle de processos:</strong> Como visualizar, gerenciar e encerrar processos em execução no sistema.<br/><strong>Gerenciamento de pacotes:</strong> Como instalar, atualizar e remover softwares utilizando os gerenciadores de pacotes do Linux.",
+          "<strong>Compilação do Kernel Linux:</strong> Como compilar, configurar e otimizar o Kernel Linux, selecionando módulos, drivers e realizando a instalação correta do sistema para personalizar e melhorar o desempenho do sistema operacional.<br/><strong>Criação de um Sistema de Arquivos raiz:</strong> Como criar e estruturar um sistema de arquivos raiz no Linux, organizando diretórios essenciais, bibliotecas, dependências e arquivos de configuração necessários para inicializar e operar um ambiente Linux funcional.<br/><strong>Bootloader e Inicialização Customizada:</strong> Como configurar e personalizar o processo de inicialização do Linux utilizando GRUB e U-Boot, ajustando parâmetros do kernel, initramfs e scripts de boot para controlar, otimizar e solucionar problemas na inicialização do sistema.<br/><strong>Integração de Ferramentas Essenciais:</strong> Como integrar, compilar e otimizar ferramentas essenciais no Linux, incluindo shells, utilitários de sistema, ferramentas de rede e desenvolvimento, garantindo compatibilidade, gerenciamento correto de dependências e funcionamento eficiente do ambiente.<br/><strong>Configuração de Rede e Serviços Básicos:</strong> Como configurar redes e serviços básicos no Linux, ajustando interfaces, IP, DNS, gateway e ferramentas de rede, além de implementar serviços essenciais, SSH, firewall e sincronização de tempo para garantir conectividade e segurança do sistema.<br/><strong>Gerenciamento de Pacotes Customizado:</strong> Como criar e administrar um sistema de gerenciamento de pacotes customizado no Linux, organizando repositórios, dependências, builds e atualizações para manter a distribuição segura, modular e fácil de manter.<br/><strong>Otimização, Segurança e Finalização:</strong> Como otimizar, proteger e finalizar uma distribuição Linux, aplicando técnicas de hardening, redução de tamanho, testes e documentação para criar imagens estáveis, seguras e prontas para distribuição.<br/><strong>Distribuição e Deployment:</strong> Como distribuir e manter uma distribuição Linux, organizando hospedagem, assinaturas, documentação e colaboração da comunidade para garantir atualizações, sustentabilidade e evolução contínua do projeto.",
       },
       {
         titulo: "Para quem é esta oficina:",
@@ -224,6 +261,7 @@ export const oficinasDetalhes = [
       getMonitor("caio-godoy"),
     ].filter(Boolean),
   },
+
   // --- CIÊNCIA DE DADOS - FERRAMENTAS E FRAMEWORKS ---
   {
     slug: "ciencia-de-dados-ferramentas-e-frameworks",
@@ -399,18 +437,18 @@ export const oficinasDetalhes = [
     ].filter(Boolean),
   },
 
-  // --- INTRODUÇÃO DE REDES PARA CIBERSEGURANÇA ---
+  // --- WEB HACKING ---
   {
-    slug: "intro-redes",
-    titulo: "Introdução de Redes para Cibersegurança: Ciclo 2",
+    slug: "web-hacking",
+    titulo: "Estudo Dirigido: Web Hacking (Cibersegurança)",
     campus: "Campus Asa Norte",
-    horarios: "Segunda, Terça e Quinta, das 11h às 13h",
+    horarios: "Segunda, Terça e Quinta, das 17h às 19h",
     imagem: imgRedes,
     alt: "Mago flutuando na matrix",
     botoes: [
       {
         texto: "Inscreva-se Agora",
-        link: "https://forms.gle/k1R5dSFoFwHRBtZ57",
+        link: "https://forms.gle/JyV8hcT81rwE9iGB7",
         tipo: "primary",
       },
     ],
@@ -418,12 +456,12 @@ export const oficinasDetalhes = [
       {
         titulo: "",
         texto:
-          "Durante esta oficina, de forma progressiva, os participantes verão os fundamentos de redes de computadores e segurança da informação, partindo de conceitos essenciais como a Tríade CIA e os modelos OSI/TCP-IP, até chegar à construção de redes segmentadas e protegidas com VLANs, NAT, firewalls e DMZ. Ao longo do curso, entende-se não somente como a rede funciona, mas também como ela pode ser atacada e defendida.<br/><br/>Esta oficina faz parte de uma trilha ofertada pela monitoria de TI da Asa Norte que tem como objetivo entender os fundamentos necessários para o estudo de Cibersegurança. Essencial para quem deseja dar os primeiros passos sólidos na área de redes e cibersegurança.<br/><br/>A oficina será realizada entre os dias <strong>13/04 e 07/05</strong>, com encontros às <strong>segundas, terças e quintas</strong>. As aulas serão ministradas <strong>presencialmente</strong>.",
+          "Este estudo dirigido é uma introdução prática à área de teste de intrusão (pentesting) em aplicações web, voltada para quem nunca teve contato com hacking ou segurança. Os participantes aprenderam como a web funciona por baixo dos panos, montam o próprio laboratório e exploram, em ambientes controlados e legais, as principais vulnerabilidades que afetam sistemas reais.<br/><br/>Esta oficina faz parte de uma <strong>trilha</strong> ofertada pela monitoria de TI da Asa Norte que tem como objetivo é formar pessoas autodidatas capazes de pesquisar, experimentar e continuar aprendendo sozinhas depois que o curso terminar.<br/><br/>A oficina será realizada entre os dias <strong>25/05 e 11/06</strong>, com encontros às <strong>segundas, terças e quintas</strong>. As aulas serão ministradas <strong>online</strong>.",
       },
       {
         titulo: "Programação por semana:",
         texto:
-          '<strong>Semana 1: O Alicerce</strong> – Fundamentos da Tríade CIA (Confidencialidade, Integridade e Disponibilidade) e os modelos OSI e TCP/IP.<br/><strong>Semana 2: Sobrevivência em Rede Local</strong> – O funcionamento de Switches, ataques de Camada 2 (MAC Flooding/Spoofing) e protocolos de transporte (TCP vs UDP).<br/><strong>Semana 3: O Mapa da Internet</strong> – Endereçamento IP (IPv4/CIDR), protocolos essenciais como DHCP e DNS, e a dinâmica de roteamento.<br/><strong>Semana 4: Arquitetura de Defesa</strong> – Construção de "castelos seguros" utilizando VLANs, NAT, Firewalls e zonas de segurança (DMZ).<br/><br/>Ao final, espera-se que o aluno tenha um perfil analítico e técnico, capaz de compreender o funcionamento básico de uma rede, identificar as camadas e suas principais vulnerabilidades e conceitos fundamentais como VLAN, gateway, ataques de camada, entre outros.',
+          "<strong>Evolução Contínua e Comunidade na Segurança:</strong> Como continuar evoluindo na área de segurança ofensiva através de laboratórios online, plataformas de treinamento, CTFs, bug bounty, comunidades técnicas e estudo contínuo para acompanhar novas vulnerabilidades, técnicas e ferramentas do ecossistema de cibersegurança.<br/><strong>Fundamentos da Web e Superfície de Ataque:</strong> Como funciona a comunicação na web, incluindo protocolos, requisições HTTP, DNS, cookies, sessões e APIs, compreendendo como aplicações são estruturadas e por que falhas de implementação podem gerar vulnerabilidades exploráveis.<br/><strong>Mentalidade, Ética e Legislação no Hacking:</strong> – Como desenvolver a mentalidade analítica do hacking ético, entendendo metodologias de teste, responsabilidade profissional, limites legais no Brasil e boas práticas para atuação segura e autorizada na área de segurança ofensiva.<br/><strong>Montagem de Laboratório Seguro para Testes:</strong> Como criar e configurar um ambiente próprio de estudos para pentest, utilizando máquinas virtuais, redes isoladas, aplicações vulneráveis e ferramentas de monitoramento para realizar testes de forma segura e controlada.<br/><strong>Análise de Autenticação e Controle de Acesso:</strong> Como avaliar mecanismos de login, gerenciamento de sessão, permissões e autenticação multifator, identificando falhas que permitem escalonamento de privilégios, acesso indevido e comprometimento de contas.<br/><strong>Documentação Técnica e Relatórios Profissionais:</strong> Como registrar vulnerabilidades encontradas de forma clara e organizada, criando relatórios técnicos profissionais com evidências, análise de impacto, reprodução do problema e recomendações de correção para equipes técnicas e clientes.<br/><strong>Ferramentas Essenciais do Pentester Web:</strong> Como utilizar ferramentas fundamentais de testes de segurança, incluindo interceptação de tráfego, análise de requisições, fuzzing, enumeração e automação de testes com ferramentas como o Burp Suite e outros utilitários amplamente utilizados no mercado.<br/><br/>Ao final, espera-se que o aluno tenha um perfil analítico e técnico, capaz de compreender o funcionamento básico de uma rede, identificar as camadas e suas principais vulnerabilidades e conceitos fundamentais como VLAN, gateway, ataques de camada, entre outros.",
       },
       {
         titulo: "Para quem é esta oficina:",
@@ -447,17 +485,12 @@ export const oficinasDetalhes = [
   // --- MACHINE LEARNING ---
   {
     slug: "machine-learning",
-    titulo: "Machine Learning: Ciclo 2",
+    titulo: "Machine Learning",
     campus: "Campus Asa Norte",
     horarios: "Terça e Quarta, das 11h às 13h",
     imagem: imgDados,
     alt: "Mago jogando dados",
     botoes: [
-      {
-        texto: "Inscreva-se Agora",
-        link: "https://forms.gle/jjwSVUxeDN3JY9Gv9",
-        tipo: "primary",
-      },
       {
         texto: "Playlist Machine Learning",
         link: "/playlist/machine-learning",
@@ -491,5 +524,45 @@ export const oficinasDetalhes = [
       getMonitor("enzo-rodrigues"),
       getMonitor("otavio-oliveira"),
     ].filter(Boolean),
+  },
+
+  // --- OFICINA DE GOLANG ---
+  {
+    slug: "oficina-golang",
+    titulo: "Oficina de Go (Golang)",
+    campus: "Campus Asa Norte",
+    horarios: "Segunda a Sexta, das 11h às 13h",
+    imagem: imgFundamentos,
+    alt: "Mago estudando fundamentos",
+    botoes: [
+      {
+        texto: "Inscreva-se Agora",
+        link: "https://forms.gle/mwiFxu1Mbmo3fFAr5",
+        tipo: "primary",
+      },
+    ],
+    sobre: [
+      {
+        titulo: "",
+        texto:
+          "A oficina de <strong>Go</strong> foi estruturada para introduzir os participantes a uma das linguagens mais eficientes, concorrentes e escaláveis da atualidade. Se você deseja dominar uma tecnologia criada pelo Google e amplamente utilizada em back-end, microsserviços e computação em nuvem, este é o momento ideal. Ao longo das aulas, passaremos desde os fundamentos de sintaxe até o uso de estruturas de dados avançadas como Structs e Mapas.<br/><br/>Esta oficina faz parte de uma <strong>trilha</strong> ofertada pela monitoria de TI da Asa Norte que tem como objetivo introduzir a linguagem Go (Golang), abordando fundamentos de sintaxe, estruturas de controle, funções, manipulação de dados e estruturas avançadas, com foco no desenvolvimento de aplicações eficientes, escaláveis e modernas.<br/><br/>A oficina ocorrerá de forma intensiva entre os dias <strong>25/05 e 12/06</strong>, com encontros diários.",
+      },
+      {
+        titulo: "O que você vai aprender:",
+        texto:
+          "<strong>Introdução a Golang:</strong> Apresentação da linguagem, configuração do ambiente e primeiros passos (Hello World e variáveis).<br/><strong>Estruturas de Controle:</strong> Domínio do fluxo do programa utilizando condicionais (if/else, switch) e estruturas de repetição (for).<br/><strong>Funções:</strong> Como criar códigos modulares, reutilizáveis e compreender múltiplos retornos em Go.<br/><strong>Arrays e Slices:</strong> Manipulação de coleções de dados, entendendo a diferença entre arrays fixos e slices dinâmicos.<br/><strong>Strings:</strong> Trabalhando com manipulação e formatação de textos.<br/><strong>Structs e Mapas:</strong> Criação de tipos de dados personalizados (Structs) e associação de chaves e valores com Mapas, essenciais para estruturar dados do mundo real.",
+      },
+      {
+        titulo: "Para quem é esta oficina:",
+        texto:
+          "<ul style='margin-left: 20px; margin-bottom: 20px; list-style-type: disc;'>" +
+          "<li>Estudantes de tecnologia que desejam aprender uma linguagem fortemente tipada e performática;</li>" +
+          "<li>Pessoas interessadas em focar em Back-end ou DevOps;</li>" +
+          "<li>Alunos que já conhecem a lógica de programação e buscam uma nova stack moderna e poderosa.</li>" +
+          "</ul>" +
+          "Fique de olho para atualizações do formulário de inscrição. <strong>As vagas são limitadas.</strong>",
+      },
+    ],
+    monitores: [getMonitor("kaynan", true)].filter(Boolean),
   },
 ];
