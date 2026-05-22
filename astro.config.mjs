@@ -5,6 +5,6 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://monitoria-remake.vercel.app",
+  site: "https://site-monitoria-blue.vercel.app",
   integrations: [react(), sitemap()],
 });

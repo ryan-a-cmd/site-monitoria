@@ -33,6 +33,7 @@ const currentPath = Astro.url.pathname;
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Monitoria de TI - CEUB" />
     <meta property="og:url" content={Astro.url} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -63,6 +64,15 @@ const currentPath = Astro.url.pathname;
     />
     <title>{title}</title>
     <ClientRouter />
+
+    <script type="application/ld+json" is:inline>
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Monitoria de TI - CEUB",
+        "url": "https://site-monitoria-blue.vercel.app/"
+      }
+    </script>
   </head>
   <body class={bodyClass}>
     {
