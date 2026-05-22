@@ -234,7 +234,7 @@ export const oficinasDetalhes = [
       {
         titulo: "",
         texto:
-          "Durante esta oficina, serão apresentados os fundamentos da construção e personalização de sistemas Linux, abordando desde a compilação do kernel até a configuração de serviços essenciais, segurança e otimização do sistema. Os participantes irão aprender, de forma prática, como estruturar ambientes Linux funcionais, configurar bootloaders, gerenciar pacotes e preparar distribuições customizadas para diferentes aplicações.<br/><br/>Esta oficina faz parte de uma <strong>trilha</strong> ofertada pela monitoria de TI da Asa Norte que tem como objetivo desenvolver conhecimentos em compilação e configuração do Kernel Linux, gerenciamento de sistemas de arquivos, inicialização customizada, integração de ferramentas essenciais, configuração de rede, segurança, otimização e distribuição de sistemas Linux.<br/><br/>A oficina será realizada entre os dias <strong>25/05 e 11/06</strong>, com encontros às <strong>segundas e quintas</strong>. As aulas serão ministradas <strong>presencialmente</strong>.",
+          "Durante esta oficina, serão apresentados os fundamentos da construção e personalização de sistemas Linux, abordando desde a compilação do kernel até a configuração de serviços essenciais, segurança e otimização do sistema. Os participantes irão aprender, de forma prática, como estruturar ambientes Linux funcionais, configurar bootloaders, gerenciar pacotes e preparar distribuições customizadas para diferentes aplicações.<br/><br/>Esta oficina faz parte de uma <strong>trilha</strong> ofertada pela monitoria de TI da Asa Norte que tem como objetivo desenvolver conhecimentos em compilação e configuração do Kernel Linux, gerenciamento de sistemas de arquivos, inicialização customizada, integração de ferramentas essenciais, configuração de rede, segurança, otimização e distribuição de sistemas Linux.<br/><br/>A oficina será realizada entre os dias <strong>25/05 e 11/06</strong>, com encontros às <strong>segundas, terças e quintas</strong>. As aulas serão ministradas <strong>presencialmente</strong>.",
       },
       {
         titulo: "O que você vai aprender:",
@@ -476,9 +476,9 @@ export const oficinasDetalhes = [
       },
     ],
     monitores: [
-      getMonitor("lucas-borges", true),
+      getMonitor("felipe-barcelos", true),
+      getMonitor("lucas-borges"),
       getMonitor("lucas-moura"),
-      getMonitor("daniel-godoi"),
     ].filter(Boolean),
   },
 
