@@ -35,7 +35,7 @@ export const oficinasAtivasData = [
     id: "web-hacking",
     titulo: "Estudo Dirigido: Web Hacking (Cibersegurança)",
     descricao:
-      "Esta oficina oferece uma introdução prática e essencial ao universo de Redes de Computadores sob a ótica da cibersegurança.",
+      "Introdução prática ao pentesting web, abordando fundamentos de segurança e exploração de vulnerabilidades em ambientes controlados.",
     turmas: ["Segunda, Terça e Quinta: 17h às 19h"],
     formato: "Online",
     linkInscricao: "/oficinas/web-hacking",
