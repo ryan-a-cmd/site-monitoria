@@ -479,6 +479,7 @@ export const oficinasDetalhes = [
       getMonitor("felipe-barcelos", true),
       getMonitor("lucas-borges"),
       getMonitor("lucas-moura"),
+      getMonitor("marco-marques"),
     ].filter(Boolean),
   },
 
