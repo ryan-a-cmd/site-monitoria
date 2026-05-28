@@ -291,8 +291,8 @@ export const equipeData = [
     foto: imgPadrao,
     ativo: true,
     ocultarNaEquipe: true,
-    linkedin: null,
-    github: null,
+    linkedin: "https://www.linkedin.com/in/gabriel-pereira-garcia-ba7299252/",
+    github: "https://github.com/Gabriel-P-Garcia",
   },
   {
     id: "caio-godoy",
