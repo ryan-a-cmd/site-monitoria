@@ -1,8 +1,26 @@
 ---
 import { faqs } from "@data/faq.js";
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.pergunta,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.resposta,
+    },
+  })),
+};
 ---
 
 <section class="faq-section" id="faq" aria-labelledby="faq-title">
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(faqSchema)}
+    is:inline
+  />
   <div class="container">
     <div class="section-header">
       <span class="tag">Tire suas dúvidas</span>

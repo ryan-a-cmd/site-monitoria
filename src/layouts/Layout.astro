@@ -15,7 +15,7 @@ interface Props {
 
 const {
   title,
-  description = "Site oficial da Monitoria de TI do CEUB. Construindo conhecimento na prática através de oficinas, projetos e aprendizado colaborativo.",
+  description = "Site oficial da Monitoria de TI do CEUB. Construindo conhecimento na prática através de oficinas e projetos para os cursos de Ciência da Computação, Engenharia de Software, Engenharia de Computação e Análise e Desenvolvimento de Sistemas (ADS).",
   bodyClass = "",
   image = "/site-preview.jpg",
   hideNavbar = false,
@@ -30,6 +30,14 @@ const currentPath = Astro.url.pathname;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    <meta
+      name="google-site-verification"
+      content="FdZBgSJ3j28WC4x9Rph0xUoEI-T_HBMZU0H2EgFz2o4"
+    />
+    <meta
+      name="keywords"
+      content="Monitoria CEUB, Monitoria TI CEUB, CEUB, Centro Universitário de Brasília, Ciência da Computação, Engenharia de Software, Engenharia de Computação, Análise e Desenvolvimento de Sistemas, ADS, Tecnologia, Oficinas de TI"
+    />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -66,12 +74,26 @@ const currentPath = Astro.url.pathname;
     <ClientRouter />
 
     <script type="application/ld+json" is:inline>
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Monitoria de TI - CEUB",
-        "url": "https://site-monitoria-blue.vercel.app/"
-      }
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Monitoria de TI - CEUB",
+          "url": "https://site-monitoria-blue.vercel.app/"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "EducationalOrganization",
+          "name": "Monitoria de TI - CEUB",
+          "url": "https://site-monitoria-blue.vercel.app/",
+          "description": "Monitoria de Tecnologia da Informação do Centro Universitário de Brasília (CEUB), oferecendo suporte e oficinas para os cursos de Ciência da Computação, Engenharia de Software, Engenharia de Computação e Análise e Desenvolvimento de Sistemas (ADS).",
+          "parentOrganization": {
+            "@type": "CollegeOrUniversity",
+            "name": "Centro Universitário de Brasília - CEUB",
+            "url": "https://www.uniceub.br/"
+          }
+        }
+      ]
     </script>
   </head>
   <body class={bodyClass}>

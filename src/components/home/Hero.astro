@@ -27,7 +27,11 @@ import logoCeub from "@assets/logo-ceub-light.png";
 
     <main class="main-layout" role="main">
       <div class="text-section">
-        <h1 class="hero-title">
+        <h1 class="sr-only">
+          Monitoria de TI CEUB - Ciência da Computação, Engenharia de Software,
+          Engenharia de Computação e ADS
+        </h1>
+        <h2 class="hero-title">
           <span class="line">Mais que oficinas.</span>
           <span class="line typewriter-container">
             <span class="incentivamos-text">Incentivamos{" "}</span>
@@ -44,7 +48,7 @@ import logoCeub from "@assets/logo-ceub-light.png";
 
             <span class="sr-only">pessoas, projetos, ideias e talentos.</span>
           </span>
-        </h1>
+        </h2>
 
         <div class="buttons">
           <a href="#iniciativas" class="btn primary">Conhecer projeto</a>
@@ -159,12 +163,13 @@ import logoCeub from "@assets/logo-ceub-light.png";
     transform: translateY(-2rem);
   }
 
-  h1.hero-title {
+  .hero-title {
     font-size: clamp(2.5rem, 4vw, 4rem);
     line-height: 1.2;
     margin-bottom: 2rem;
     font-weight: 600;
     text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+    margin-top: 0;
   }
 
   .hero-title .line {
@@ -335,7 +340,7 @@ import logoCeub from "@assets/logo-ceub-light.png";
       margin-top: 0;
     }
 
-    h1.hero-title {
+    .hero-title {
       font-size: clamp(2.2rem, 7vw, 2.8rem);
       margin-bottom: 0.4rem;
       text-align: left;
