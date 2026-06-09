@@ -336,12 +336,11 @@ export const equipeData = [
   {
     id: "matheus-couto",
     nome: "Matheus Couto",
-    descricao: "Monitor de Linux | Ressuscitador de Máquinas",
+    descricao: "Entusiasta de Linux | Ressuscitador de Máquinas",
     foto: imgMatheusCouto,
     ativo: true,
-    ocultarNaEquipe: true,
     linkedin: "https://www.linkedin.com/in/matheus-couto-nogueira-b37518365/",
-    github: "https://github.com/cotheus",
+    codeberg: "https://codeberg.org/cotheus",
   },
 
   // ==========================================
