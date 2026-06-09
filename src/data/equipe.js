@@ -35,6 +35,7 @@ import imgMarcoMarques from "@assets/equipe/marco-marques.jpg";
 import imgJoaoSoupa from "@assets/equipe/joao-soupa.jpg";
 import imgFelipeRios from "@assets/equipe/felipe-rios.jpg";
 import imgRicardoBonna from "@assets/equipe/ricardo-bonna.jpg";
+import imgMatheusCouto from "@assets/equipe/matheus-couto.jpeg";
 
 /*
  * COMO ADICIONAR UM NOVO MONITOR À EQUIPE:
@@ -331,6 +332,16 @@ export const equipeData = [
     ocultarNaEquipe: true,
     linkedin: "https://www.linkedin.com/in/felipe-rios-93a9b23b6/",
     github: null,
+  },
+  {
+    id: "matheus-couto",
+    nome: "Matheus Couto",
+    descricao: "Monitor de Linux | Ressuscitador de Máquinas",
+    foto: imgMatheusCouto,
+    ativo: true,
+    ocultarNaEquipe: true,
+    linkedin: "https://www.linkedin.com/in/matheus-couto-nogueira-b37518365/",
+    github: "https://github.com/cotheus",
   },
 
   // ==========================================

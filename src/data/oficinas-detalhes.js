@@ -566,4 +566,43 @@ export const oficinasDetalhes = [
     ],
     monitores: [getMonitor("kaynan", true)].filter(Boolean),
   },
+
+  // --- OFICINA DE LINUX TAGUATINGA ---
+  {
+    slug: "oficina-linux-taguatinga",
+    titulo: "Oficina de Linux: Introdução ao Sistema Operacional",
+    campus: "Campus Taguatinga",
+    horarios: "Terças e Quintas, das 11h às 12h (Sala 194)",
+    imagem: imgLinux,
+    alt: "Mago ao lado do pinguim Tux",
+    botoes: [
+      {
+        texto: "Inscreva-se Agora",
+        link: "https://forms.gle/HYp1Er1y3z6NMUrx7",
+        tipo: "primary",
+      },
+    ],
+    sobre: [
+      {
+        titulo: "",
+        texto:
+          "A oficina de <strong>Linux: Introdução ao Sistema Operacional</strong> foi elaborada para quem deseja desmistificar e dominar um dos sistemas mais utilizados no mundo da tecnologia corporativa e infraestrutura.<br/><br/>A oficina ocorrerá presencialmente no Campus Taguatinga entre os dias <strong>16/06 e 25/06</strong>, com encontros pontuais às <strong>terças e quintas-feiras</strong>. As aulas ocorrerão na <strong>Sala 194</strong>, das <strong>11h às 12h</strong>.",
+      },
+      {
+        titulo: "O que você vai aprender:",
+        texto:
+          "<strong>História e Filosofia:</strong> Compreensão das origens do Linux, a diferença entre Kernel e Distribuição, e o papel do open-source no ecossistema de TI moderno.<br/><strong>Instalação Prática:</strong> Passo a passo prático de como instalar uma distribuição Linux na máquina.<br/><strong>Estrutura de Diretórios:</strong> Navegação fluida pelo File System (FHS) – entendendo o papel de cada pasta do sistema.<br/><strong>Domínio do Terminal (Comandos Básicos):</strong> Gestão de arquivos e pastas, manipulação de permissões, usuários e configurações base via linha de comando.",
+      },
+      {
+        titulo: "Para quem é esta oficina:",
+        texto:
+          "<ul style='margin-left: 20px; margin-bottom: 20px; list-style-type: disc;'>" +
+          "<li>Estudantes que desejam aprender a utilizar Linux de forma prática e autônoma;</li>" +
+          "<li>Iniciantes que querem construir uma base sólida para trabalhar com o terminal no dia a dia.</li>" +
+          "</ul>" +
+          "Preencha o formulário de inscrição para garantir sua participação. <strong>As vagas são limitadas.</strong>",
+      },
+    ],
+    monitores: [getMonitor("matheus-couto", true)].filter(Boolean),
+  },
 ];
